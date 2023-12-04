@@ -579,7 +579,7 @@ contract HerosStaking is Ownable {
     mapping(uint256 => uint256) internal packages;
 
     constructor(address _tokenAddress) {
-        packages[0] = 1;
+        packages[0] = 100000;
         tokenAddress = _tokenAddress;
         token = IERC20(_tokenAddress);
     }
